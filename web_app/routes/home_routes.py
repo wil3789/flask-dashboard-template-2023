@@ -25,7 +25,7 @@ def hello_world():
 
     # compile message using specified "name" url parameter or a default value:
     name = url_params.get("You a real POS") or "You a real POS"
-    message = f"Hello, {name}!"
+    message = f"Sup, {name}!"
 
    # return message
-    return render_template("hello.html", message=message)
+    return render_template("hello.html", message=message, other="Jea")
